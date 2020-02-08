@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="46dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="0dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_id" />
+
+    </RelativeLayout>
+
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeRefresh">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout"
+            android:background="@drawable/gg">
+
+            <ImageView
+                android:layout_width="3000dp"
+                android:layout_height="280dp"
+                android:src="@drawable/no_internet"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img_no_internet"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/no_internet"
+                />
+
+            <TextView
+                android:id="@+id/txt_no_internet"
+                android:text="@string/no_internet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_no_internet"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="35dp"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="28sp"
+                android:paddingBottom="1dp"
+                android:background="@drawable/trans"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

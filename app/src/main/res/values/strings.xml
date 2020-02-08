@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Random Quotes</string>
+    <string name="admob_app_id">ca-app-pub-5559259296078732~4986680097</string>
+    <string name="banner_ad_id">ca-app-pub-5559259296078732/1670445135</string>
+    <string name="popup_ad_id">ca-app-pub-5559259296078732/3815400355</string>
+    <string name="no_internet">No Internet Connection</string>
+</resources>
