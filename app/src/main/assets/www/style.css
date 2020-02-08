@@ -23,10 +23,10 @@ body {
 }
 
 .footer {
-  width: 450px;
+  width: 400px;
   text-align: center;
   display: block;
-  margin: 15px auto 30px auto;
+  margin: 0px auto 0px auto;
   font-size: 0.8em;
   color: #fff;
 }
@@ -39,14 +39,14 @@ body {
 #quote-box {
   border-radius: 3px;
   position: relative;
-  width: 300px;
+  width: 320px;
   padding: 40px 50px;
   display: table;
   background-color: #fff;
 }
 #quote-box .quote-text {
   text-align: center;
-  width: 340px;
+  width: 320px;
   height: auto;
   clear: both;
   font-weight: 500;
@@ -57,7 +57,7 @@ body {
   margin-right: 0.4em;
 }
 #quote-box .quote-author {
-  width: 340px;
+  width: 320px;
   height: auto;
   clear: both;
   padding-top: 20px;
@@ -65,7 +65,7 @@ body {
   text-align: right;
 }
 #quote-box .buttons {
-  width: 340px;
+  width: 320px;
   margin: auto;
   display: block;
 }
